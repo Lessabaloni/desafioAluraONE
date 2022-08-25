@@ -1,0 +1,60 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="flor.png" />
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body style="background:#FCCDF7; background-image: url('background.png') ; ">
+
+<!--Contenedor-->
+<div style="width: 100%; height: 100%; position: absolute; overflow: visible;   " >
+<img src="Logo.png" style="width:100px; height:40px; position: absolute; top: 15px; left: 20px";>
+ 
+ 
+<!--Área central-->  
+  <main class="main" style="position: absolute; width: 800px; ">
+    <center><h1 class="titulo">Encriptador de Texto</h1></center>
+    <section class="form box" >
+      <form id="formulario" >
+        <center><textarea  class="text-input" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui" rows="5" cols="50" style="width: 700px; height: 250px; font-size: 24px; margin-bottom: 25px; background-color: transparent ; border-color: transparent;"></textarea></center><br/>
+        <div class="button-container" style="position: absolute; width: 800px; margin-top: 40px;" >
+          <img src="img_27937.png" style="width:12px; height:12px; margin-left: 90px;"><b><label for="input-texto"> Solo letras minúsculas, sin acentos</label></b><br/>
+          <center><input class="btn" type="submit" value="Encriptar" id="btn-encriptar" >
+          <input class="btn" type="submit" value="Desencriptar" id="btn-desencriptar" ><br/>
+        </center>
+        </div>
+      </form>
+    </section>
+  </main>
+
+<!--Columna lateral derecha-->
+
+  <div class="panel-derecha" > 
+  <section class="msg box" style="margin-top: 20px; ">
+    <center><img src="imagen.png" style="width:350px; height: 350px;"></center>
+    <label for="mensaje-texto" style="margin-left:25px;">Ningún mensaje fue encontrado</h2></label>
+    <textarea class="text-input" placeholder="Tu texto aparecerá aquí" name="mensaje-texto" id="mensaje-texto"rows="5" cols="50" style="margin-left: 25px; width: 350px; height: 120px; font-size: 24px; background-color: #fff; border-color: white;"></textarea><br/><br/>               
+    <center><input class="btn" type="submit" value="Copiar texto" id="btn-copy" ></center>
+  </section>
+</div>
+
+<!-- Footer (pie de la página)-->
+
+<div style="position: absolute; margin-top: 525px; width: 800px; font-size: 20px; ">
+  <footer class="footer">
+    <center><b><p>________________________________________________________________________</p></b>
+            <p>Encriptador desarrollado por Leslie Geordani Abaloni Armas <img src="flor.png" style="width: 20px; height: 20px;"> | &#169 2022</p>
+            <p>Sprint 01-Encriptador | Alura LATAM | Oracle Next Education</p>
+    </center>
+  </footer>
+</div>
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
